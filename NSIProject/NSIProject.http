@@ -1,0 +1,6 @@
+@NSIProject_HostAddress = http://localhost:5030
+
+GET {{NSIProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

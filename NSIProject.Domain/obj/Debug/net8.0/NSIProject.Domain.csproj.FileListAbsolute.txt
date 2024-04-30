@@ -1,0 +1,12 @@
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\bin\Debug\net8.0\NSIProject.Domain.deps.json
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\bin\Debug\net8.0\NSIProject.Domain.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\bin\Debug\net8.0\NSIProject.Domain.pdb
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.csproj.AssemblyReference.cache
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.AssemblyInfoInputs.cache
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.AssemblyInfo.cs
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\refint\NSIProject.Domain.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.pdb
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\ref\NSIProject.Domain.dll

@@ -1,0 +1,15 @@
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\bin\Debug\net8.0\NSIProject.Application.deps.json
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\bin\Debug\net8.0\NSIProject.Application.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\bin\Debug\net8.0\NSIProject.Application.pdb
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\NSIProject.Application.csproj.AssemblyReference.cache
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\NSIProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\NSIProject.Application.AssemblyInfoInputs.cache
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\NSIProject.Application.AssemblyInfo.cs
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\NSIProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\NSIProject.Application.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\refint\NSIProject.Application.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\NSIProject.Application.pdb
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\ref\NSIProject.Application.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\bin\Debug\net8.0\NSIProject.Domain.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\bin\Debug\net8.0\NSIProject.Domain.pdb
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Application\obj\Debug\net8.0\NSIProje.43BC15D1.Up2Date
