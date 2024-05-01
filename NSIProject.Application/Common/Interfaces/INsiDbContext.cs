@@ -8,4 +8,6 @@ public interface INsiDbContext
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 
     DbSet<Post> Posts { get; }
+
+    DbSet<ApplicationUser> Users { get; }
 }

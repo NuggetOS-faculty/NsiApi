@@ -17,6 +17,10 @@ public class NsiDbContext : IdentityDbContext<
     IdentityRoleClaim<string>,
     IdentityUserToken<string>>, INsiDbContext
 {
+    public NsiDbContext(DbContextOptions<NsiDbContext> options) : base(options)
+    {
+    }
+
     public DbSet<Post> Posts => Set<Post>();
 
     protected override void OnModelCreating(ModelBuilder builder)

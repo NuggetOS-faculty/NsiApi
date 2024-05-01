@@ -50,3 +50,10 @@ C:\Users\onlin\RiderProjects\NSIProject\NSIProject\obj\Debug\net8.0\refint\NSIPr
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject\obj\Debug\net8.0\NSIProject.Api.pdb
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject\obj\Debug\net8.0\NSIProject.Api.genruntimeconfig.cache
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject\obj\Debug\net8.0\ref\NSIProject.Api.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\MediatR.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\Riok.Mapperly.Abstractions.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject\obj\Debug\net8.0\NSIProject.Api.sourcelink.json

@@ -10,4 +10,5 @@ public class PostgresDbConfiguration
 
     public string ConnectionString =>
         $"Host={Host};Database={Database};Username={Username};Password={Password}";
+    
 }

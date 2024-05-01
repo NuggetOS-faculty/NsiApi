@@ -5,6 +5,7 @@ namespace NSIProject.Auth.Options;
 
 public class HeaderBasicAuthSchemeOptions : AuthenticationSchemeOptions
 {
+    
     public string Username { get; set; } = "X-Nsi-Username";
     public string Password { get; set; } = "X-Nsi-Password";
 

@@ -10,3 +10,4 @@ C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIPr
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\refint\NSIProject.Domain.dll
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.pdb
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\ref\NSIProject.Domain.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Domain\obj\Debug\net8.0\NSIProject.Domain.sourcelink.json

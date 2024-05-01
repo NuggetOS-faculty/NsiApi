@@ -21,8 +21,4 @@
       <ProjectReference Include="..\NSIProject.Domain\NSIProject.Domain.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Common\Validators\" />
-    </ItemGroup>
-
 </Project>

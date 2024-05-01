@@ -7,11 +7,7 @@ namespace NSIProject;
 [Route("api/[controller]/[action]")]
 public class BaseController : ControllerBase
 {
-    private ISender _sender;
+    private ISender? _mediator;
 
-    protected ISender Sender => _sender ??= HttpContext.RequestServices.GetService<ISender>();
-
-    public BaseController()
-    {
-    }
+    protected ISender Mediator => _mediator ??= HttpContext.RequestServices.GetRequiredService<ISender>();
 }

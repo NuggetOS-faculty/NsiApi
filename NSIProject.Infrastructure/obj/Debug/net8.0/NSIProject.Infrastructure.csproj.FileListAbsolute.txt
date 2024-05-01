@@ -17,3 +17,4 @@ C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Infrastructure\obj\Debug\net8
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Infrastructure\obj\Debug\net8.0\NSIProject.Infrastructure.pdb
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Infrastructure\obj\Debug\net8.0\NSIProject.Infrastructure.genruntimeconfig.cache
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Infrastructure\obj\Debug\net8.0\ref\NSIProject.Infrastructure.dll
+C:\Users\onlin\RiderProjects\NSIProject\NSIProject.Infrastructure\obj\Debug\net8.0\NSIProject.Infrastructure.sourcelink.json

@@ -10,6 +10,7 @@ namespace NSIProject.Auth.Schemas;
 public class HeaderBasicAuthHandler : AuthenticationHandler<HeaderBasicAuthSchemeOptions>
 
 {
+    [Obsolete]
     public HeaderBasicAuthHandler(IOptionsMonitor<HeaderBasicAuthSchemeOptions> options, ILoggerFactory logger,
         UrlEncoder encoder, ISystemClock clock) : base(options, logger, encoder, clock)
     {
