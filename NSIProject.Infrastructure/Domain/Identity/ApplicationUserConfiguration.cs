@@ -19,6 +19,7 @@ public class ApplicationUserConfiguration : IEntityTypeConfiguration<Application
             NormalizedUserName = "PBISEVAC@singidunum.ac.rs",
             Email = "pbisevac@singidunum.ac.rs",
             NormalizedEmail = "PBISEVAC@singidunum.ac.rs",
+            PasswordHash = "test1",
             EmailConfirmed = true,
             PhoneNumberConfirmed = true,
             SecurityStamp = new Guid().ToString("D"),

@@ -281,6 +281,7 @@ namespace NSIProject.Infrastructure.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "PBISEVAC@singidunum.ac.rs",
                             NormalizedUserName = "PBISEVAC@singidunum.ac.rs",
+                            PasswordHash = "test1",
                             PhoneNumberConfirmed = true,
                             SecurityStamp = "00000000-0000-0000-0000-000000000000",
                             TwoFactorEnabled = false,
@@ -314,7 +315,8 @@ namespace NSIProject.Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("uuid_generate_v4()");
 
                     b.Property<string>("Content")
                         .IsRequired()
