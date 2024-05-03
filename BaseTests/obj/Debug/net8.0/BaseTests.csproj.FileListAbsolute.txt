@@ -1,0 +1,16 @@
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\bin\Debug\net8.0\BaseTests.deps.json
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\bin\Debug\net8.0\BaseTests.dll
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\bin\Debug\net8.0\BaseTests.pdb
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\bin\Debug\net8.0\NSIProject.Domain.dll
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\bin\Debug\net8.0\NSIProject.Domain.pdb
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.csproj.AssemblyReference.cache
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.AssemblyInfoInputs.cache
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.AssemblyInfo.cs
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.csproj.CoreCompileInputs.cache
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.sourcelink.json
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.csproj.Up2Date
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.dll
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\refint\BaseTests.dll
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\BaseTests.pdb
+C:\Users\onlin\RiderProjects\NSIProject\BaseTests\obj\Debug\net8.0\ref\BaseTests.dll

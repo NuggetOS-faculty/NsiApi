@@ -1,0 +1,7 @@
+{
+  "BaseTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\onlin\\RiderProjects\\NSIProject\\BaseTests",
+  "NSIProject.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\onlin\\RiderProjects\\NSIProject\\NSIProject",
+  "NSIProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\onlin\\RiderProjects\\NSIProject\\NSIProject.Application",
+  "NSIProject.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\onlin\\RiderProjects\\NSIProject\\NSIProject.Domain",
+  "NSIProject.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\onlin\\RiderProjects\\NSIProject\\NSIProject.Infrastructure"
+}
