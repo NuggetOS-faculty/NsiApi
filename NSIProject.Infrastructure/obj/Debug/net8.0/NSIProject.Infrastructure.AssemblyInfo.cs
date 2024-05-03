@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NSIProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72f8a99a4a66eb0cb9a7e1da483c03e6f079afc4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c7429f22b6fc67bc5a3013bcb859bbde8721765")]
 [assembly: System.Reflection.AssemblyProductAttribute("NSIProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NSIProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
