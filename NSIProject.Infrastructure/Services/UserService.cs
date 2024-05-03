@@ -20,6 +20,8 @@ public class UserService : IUserService
 
     public Task<ApplicationUser?> FindByUserName(string userName)
     {
+        // leave for debugging purposes var users = _context.Users.ToList();
+
         var user = _context.Users.FirstOrDefault(x => x.UserName == userName);
         return Task.FromResult(user);
     }

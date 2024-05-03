@@ -14,9 +14,14 @@ public static class DependencyInjection
     {
         var dbConfiguration = new PostgresDbConfiguration();
         configuration.GetSection("PostgresDbConfiguration").Bind(dbConfiguration);
-        services.AddDbContext<NsiDbContext>(options => options.UseNpgsql(dbConfiguration.ConnectionString,
-            x => x.MigrationsAssembly(typeof(NsiDbContext).Assembly.FullName)));
-        services.AddScoped<INsiDbContext>(provider => provider.GetService<NsiDbContext>()!);
+        if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") != "Test")
+        {
+            services.AddDbContext<NsiDbContext>(options =>
+                options.UseNpgsql(dbConfiguration.ConnectionString,
+                    x => x.MigrationsAssembly(typeof(NsiDbContext).Assembly.FullName)));
+        }
+
+        services.AddScoped<INsiDbContext>(provider => provider.GetService<NsiDbContext>());
         services.AddScoped<IPostService, PostService>();
         services.AddScoped<IUserService, UserService>();
         return services;
