@@ -19,10 +19,8 @@ public class CustomWebApplicationFactory<TStartup> : WebApplicationFactory<TStar
         builder.ConfigureServices(services =>
         {
             services.RemoveAll<NsiDbContext>();
-
             var dbName = Guid.NewGuid()
                 .ToString();
-
             services.AddDbContext<NsiDbContext>(options => { options.UseInMemoryDatabase(dbName); });
         });
     }

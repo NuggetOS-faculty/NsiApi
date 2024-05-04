@@ -35,7 +35,5 @@ public class NsiDbContext : IdentityDbContext<
         var result = base.SaveChangesAsync(cancellationToken);
         return result;
     }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
-        optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=root;Database=nsi");
+    
 }

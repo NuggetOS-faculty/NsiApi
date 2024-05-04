@@ -21,7 +21,8 @@ public static class DependencyInjection
                     x => x.MigrationsAssembly(typeof(NsiDbContext).Assembly.FullName)));
         }
 
-        services.AddScoped<INsiDbContext>(provider => provider.GetService<NsiDbContext>());
+        services.AddScoped<INsiDbContext>(provider => provider.GetRequiredService<NsiDbContext>());
+
         services.AddScoped<IPostService, PostService>();
         services.AddScoped<IUserService, UserService>();
         return services;
