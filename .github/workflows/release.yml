@@ -38,7 +38,7 @@ jobs:
         run: |
           dotnet tool install --global dotnet-ef
           dotnet restore
-          dotnet ef database update --verbose --project ./NSIProject.Infrastructure --startup-project ./NSIProject
+          dotnet ef database update --verbose --configuration Release --project ./NSIProject.Infrastructure/NSIProject.Infrastructure.csproj --startup-project ./NSIProject/NSIProject.csproj
 
       - name: Deploy to Azure Container Instances
         run: |
