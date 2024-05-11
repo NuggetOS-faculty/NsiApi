@@ -42,7 +42,7 @@ jobs:
           context: .
           file: ./NSIProject/Dockerfile
           push: true
-          tags: sigidnumnsi.azurecr.io/nsi:v${{ steps.get_version.outputs.VERSION }}
+          tags: sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
