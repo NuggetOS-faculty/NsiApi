@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NSIProject.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f101d740a9af19dd7b4593b5eebb4e1d5c3105a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55eb51015ba7f198d2308ffcaee10042acf743ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("NSIProject.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NSIProject.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,32 @@
+name: Release Workflow
+
+on:
+  push:
+    branches:
+      - release
+      
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Azure Container Registry
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.LOGIN_SERVER }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+
+      - name: Build and push Docker image
+        run: |
+          docker-compose build
+          docker tag nsi-be-api:latest ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }}
+          docker push ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }}
+
+      - name: Deploy to Azure Container Registry
+        run: |
+          az acr run --registry ${{ secrets.LOGIN_SERVER }} --image ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }} --cmd 'echo "Deploying image"'
