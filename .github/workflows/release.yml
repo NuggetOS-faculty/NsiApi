@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+     - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -33,6 +36,7 @@ jobs:
 
       - name: Run EF Core migrations
         run: |
+          dotnet tool install --global dotnet-ef
           dotnet restore
           dotnet ef database update --verbose --project ./NSIProject.Infrastructure --startup-project ./NSIProject
 
