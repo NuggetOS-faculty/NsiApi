@@ -14,6 +14,12 @@ jobs:
           dotnet-version: "8.0.x"
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history so we can access tags
+
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::$(git describe --tags)
 
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
@@ -42,9 +48,9 @@ jobs:
           context: .
           file: ./NSIProject/Dockerfile
           push: true
-          tags: sigidnumnsi.azurecr.io/nsi:v1
+          tags: sigidnumnsi.azurecr.io/nsi:v${{ steps.get_version.outputs.VERSION }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
       - name: Run Docker container
-        run: docker run -d -p 8080:8080 sigidnumnsi.azurecr.io/nsi:v1
+        run: docker run -d -p 8080:8080 sigidnumnsi.azurecr.io/nsi:v${{ steps.get_version.outputs.VERSION }}
