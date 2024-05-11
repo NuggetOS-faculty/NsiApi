@@ -314,9 +314,7 @@ namespace NSIProject.Infrastructure.Migrations
             modelBuilder.Entity("NSIProject.Domain.Entities.Post", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasDefaultValueSql("uuid_generate_v4()");
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Content")
                         .IsRequired()
