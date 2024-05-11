@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - release
-      
 
 jobs:
   build-and-deploy:
@@ -13,6 +12,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
 
       - name: Login to Azure Container Registry
         uses: azure/docker-login@v1
@@ -27,6 +31,12 @@ jobs:
           docker tag nsi-be-api:latest ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }}
           docker push ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }}
 
-      - name: Deploy to Azure Container Registry
+      - name: Run EF Core migrations
         run: |
-          az acr run --registry ${{ secrets.LOGIN_SERVER }} --image ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }} --cmd 'echo "Deploying image"'
+          dotnet restore
+          dotnet ef database update --verbose --project ./NSIProject.Infrastructure --startup-project ./NSIProject
+
+      - name: Deploy to Azure Container Instances
+        run: |
+          az container create --name SigidnumNsi --image ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }} --registry-login-server ${{ secrets.LOGIN_SERVER }} --registry-username ${{ secrets.USERNAME }} --registry-password ${{ secrets.PASSWORD }} --resource-group Nsi || true
+          az container restart --name SigidnumNsi --resource-group Nsi
