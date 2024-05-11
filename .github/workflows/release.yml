@@ -1,9 +1,8 @@
 name: Release Workflow
 
 on:
-  push:
-    branches:
-      - release
+  release:
+    types: [published]
 
 jobs:
   build-and-deploy:
