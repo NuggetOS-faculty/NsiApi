@@ -31,8 +31,6 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker-compose build
-          docker tag nsi-be-api:latest ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }}
-          docker push ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }}
 
       - name: Run EF Core migrations
         run: |
@@ -40,7 +38,15 @@ jobs:
           dotnet restore
           dotnet ef database update --verbose --configuration Release --project ./NSIProject.Infrastructure/NSIProject.Infrastructure.csproj --startup-project ./NSIProject/NSIProject.csproj
 
-      - name: Deploy to Azure Container Instances
-        run: |
-          az container create --name SigidnumNsi --image ${{ secrets.LOGIN_SERVER }}/my-image:${{ github.sha }} --registry-login-server ${{ secrets.LOGIN_SERVER }} --registry-username ${{ secrets.USERNAME }} --registry-password ${{ secrets.PASSWORD }} --resource-group Nsi || true
-          az container restart --name SigidnumNsi --resource-group Nsi
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./NSIProject/Dockerfile
+          push: true
+          tags: sigidnumnsi.azurecr.io/nsi:v1
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+
+      - name: Run Docker container
+        run: docker run -d -p 8080:8080 sigidnumnsi.azurecr.io/nsi:v1
