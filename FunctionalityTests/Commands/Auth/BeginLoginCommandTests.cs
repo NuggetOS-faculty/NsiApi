@@ -34,6 +34,7 @@ public class BeginLoginCommandTests : BaseTest
         Assert.Null(responseDto.ValidationToken);
     }
 
+    [Fact]
     public async Task BeginLoginCommand_WhenCalledWithExistingUser_ReturnsValidationToken()
     {
         // Arrange
