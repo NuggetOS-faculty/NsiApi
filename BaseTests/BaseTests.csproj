@@ -7,7 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\NSIProject.Application\NSIProject.Application.csproj" />
       <ProjectReference Include="..\NSIProject.Domain\NSIProject.Domain.csproj" />
     </ItemGroup>
+
 
 </Project>

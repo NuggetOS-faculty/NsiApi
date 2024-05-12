@@ -2,7 +2,7 @@ name: Release Workflow
 
 on:
   release:
-    types: [published]
+    types: [ published ]
 
 jobs:
   build-and-deploy:
@@ -46,5 +46,4 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
-      - name: Run Docker container
-        run: docker run -d -p 8080:8080 sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
+      
