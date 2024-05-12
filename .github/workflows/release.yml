@@ -2,7 +2,7 @@ name: Release Workflow
 
 on:
   release:
-    types: [ published ]
+    types: [published]
 
 jobs:
   build-and-deploy:
@@ -32,7 +32,6 @@ jobs:
           dotnet tool install --global dotnet-ef
           dotnet restore
           dotnet ef database update --verbose --configuration Release --project ./NSIProject.Infrastructure --startup-project ./NSIProject
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
@@ -45,18 +44,6 @@ jobs:
           tags: sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
-          
-      - name: 'Deploy to Azure Container Instances'
-        uses: 'azure/aci-deploy@v1'
-        with:
-            resource-group: Nsi
-            dns-name-label: nsi
-            image: sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
-            cpu: 1   #Optional
-            memory: 0.1   #Optional
-            registry-username: ${{ secrets.USERNAME }}
-            registry-password: ${{ secrets.PASSWORD }}
-            name: SigidnumNsi
-            location: 'west us'
 
-      
+      - name: Run Docker container
+        run: docker run -d -p 8080:8080 sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
