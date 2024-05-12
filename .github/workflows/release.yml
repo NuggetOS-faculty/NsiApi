@@ -2,7 +2,7 @@ name: Release Workflow
 
 on:
   release:
-    types: [published]
+    types: [ published ]
 
 jobs:
   build-and-deploy:
@@ -21,7 +21,7 @@ jobs:
           dotnet-version: 5.0.x
 
       - name: Login to Azure Container Registry
-        run: az acr login --name ${{ secrets.ACR_NAME }}
+        run: az login --password ${{ secrets.PASSWORD }} --username ${{ secrets.USERNAME }}
 
       - name: Run EF Core migrations
         run: |
