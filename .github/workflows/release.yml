@@ -45,5 +45,18 @@ jobs:
           tags: sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
+          
+      - name: 'Deploy to Azure Container Instances'
+        uses: 'azure/aci-deploy@v1'
+        with:
+          resource-group: Nsi
+          dns-name-label: nsi-be-api
+          image: sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
+          cpu: 1   #Optional
+          memory: 0.1   #Optional
+          registry-username: ${{ secrets.USERNAME }}
+          registry-password: ${{ secrets.PASSWORD }}
+          name: nsi-be-api
+          location: 'west us'
 
       
