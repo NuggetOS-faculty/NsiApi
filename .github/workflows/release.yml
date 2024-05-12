@@ -21,11 +21,7 @@ jobs:
           dotnet-version: 5.0.x
 
       - name: Login to Azure Container Registry
-        uses: azure/docker-login@v1
-        with:
-          login-server: ${{ secrets.LOGIN_SERVER }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+        run: az acr login --name ${{ secrets.ACR_NAME }}
 
       - name: Run EF Core migrations
         run: |
@@ -41,9 +37,15 @@ jobs:
           context: .
           file: ./NSIProject/Dockerfile
           push: true
-          tags: sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
+          tags: ${{ secrets.ACR_NAME }}/nsi:v${{ github.event.release.tag_name }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
+      - name: Deploy to Azure Container Instance
+        run: |
+          az container create --resource-group <resourceGroupName> --name nsi-project --image ${{ secrets.ACR_NAME }}/nsi:v${{ github.event.release.tag_name }} --dns-name-label nsi-project --ports 80
+        env:
+          ACR_NAME: ${{ secrets.ACR_NAME }}
+
       - name: Run Docker container
-        run: docker run -d -p 8080:8080 sigidnumnsi.azurecr.io/nsi:v${{ github.event.release.tag_name }}
+        run: docker run -d -p 8080:8080 ${{ secrets.ACR_NAME }}/nsi:v${{ github.event.release.tag_name }}
