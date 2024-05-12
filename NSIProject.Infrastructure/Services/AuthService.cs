@@ -19,7 +19,8 @@ public class AuthService(ApplicationUserManager userManager, IUserService userSe
 
     public async Task<BeginLoginResponseDto> BeginLoginAsync(string emailAddress)
     {
-        var user = userManager.Users.FirstOrDefault(x => x.Email.Equals(emailAddress, StringComparison.Ordinal));
+        var normalizedEmail = emailAddress.ToLower();
+        var user = userManager.Users.FirstOrDefault(u => u.Email.ToLower() == normalizedEmail);
         string? validationToken = null;
 
         if (user == null)
@@ -37,42 +38,50 @@ public class AuthService(ApplicationUserManager userManager, IUserService userSe
 
     public async Task<CompleteLoginResponseDto> CompleteLoginAsync(string validationToken)
     {
-        var (userToken, emailAddress) = ExtractValidationToken(validationToken);
-        var user = await userManager.FindByEmailAsync(emailAddress);
-
-        if (user is not null)
+        try
         {
-            var isValid = await userManager.VerifyUserTokenAsync(user,
-                Provider,
-                Purpose,
-                userToken);
+            var (userToken, emailAddress) = ExtractValidationToken(validationToken);
+            var normalizedEmail = emailAddress.ToLower();
+            var user = userManager.Users.FirstOrDefault(u => u.Email.ToLower() == normalizedEmail);
 
-            if (!isValid)
-                return new CompleteLoginResponseDto();
-
-            await userManager.UpdateSecurityStampAsync(user);
-
-            var authClaims = new List<Claim>();
-            var roles = new List<string>();
-
-            var rolesFromDb = await userManager.GetRolesAsync(user);
-
-            foreach (var roleFromDb in rolesFromDb)
+            if (user is not null)
             {
-                roles.Add(roleFromDb);
-                authClaims.Add(new Claim(ClaimTypes.Role,
-                    roleFromDb));
+                var isValid = await userManager.VerifyUserTokenAsync(user,
+                    Provider,
+                    Purpose,
+                    userToken);
+
+                if (!isValid)
+                    return new CompleteLoginResponseDto();
+
+                await userManager.UpdateSecurityStampAsync(user);
+
+                var authClaims = new List<Claim>();
+                var roles = new List<string>();
+
+                var rolesFromDb = await userManager.GetRolesAsync(user);
+
+                foreach (var roleFromDb in rolesFromDb)
+                {
+                    roles.Add(roleFromDb);
+                    authClaims.Add(new Claim(ClaimTypes.Role,
+                        roleFromDb));
+                }
+                //
+                // authClaims.AddRange(user.Claims.Select(item => new Claim(item.Type,
+                //     item.Value)));
+
+                return new CompleteLoginResponseDto(user.Email,
+                    roles,
+                    new JwtSecurityTokenHandler().WriteToken(GenerateJwtToken(authClaims)));
             }
-            //
-            // authClaims.AddRange(user.Claims.Select(item => new Claim(item.Type,
-            //     item.Value)));
 
-            return new CompleteLoginResponseDto(user.Email,
-                roles,
-                new JwtSecurityTokenHandler().WriteToken(GenerateJwtToken(authClaims)));
+            return new CompleteLoginResponseDto();
         }
-
-        return new CompleteLoginResponseDto();
+        catch (Exception e)
+        {
+            return new CompleteLoginResponseDto();
+        }
     }
 
     private static Tuple<string, string> ExtractValidationToken(string token)

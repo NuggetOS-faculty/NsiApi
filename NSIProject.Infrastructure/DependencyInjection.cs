@@ -18,6 +18,7 @@ public static class DependencyInjection
     {
         var dbConfiguration = new PostgresDbConfiguration();
         configuration.GetSection("PostgresDbConfiguration").Bind(dbConfiguration);
+
         services.AddIdentity<ApplicationUser, ApplicationRole>()
             .AddRoleManager<RoleManager<ApplicationRole>>()
             .AddUserManager<ApplicationUserManager>()
