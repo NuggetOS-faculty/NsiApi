@@ -10,7 +10,8 @@ using NSIProject.Infrastructure.Identity;
 
 namespace NSIProject.Infrastructure.Services;
 
-public class AuthService(ApplicationUserManager userManager, IOptions<JwtConfiguration> jwtOptions) : IAuthService
+public class AuthService(ApplicationUserManager userManager, IUserService userService,
+    IOptions<JwtConfiguration> jwtOptions) : IAuthService
 {
     private readonly JwtConfiguration _jwtConfiguration = jwtOptions.Value;
     private const string Purpose = "passwordless-auth";
@@ -18,7 +19,7 @@ public class AuthService(ApplicationUserManager userManager, IOptions<JwtConfigu
 
     public async Task<BeginLoginResponseDto> BeginLoginAsync(string emailAddress)
     {
-        var user = await userManager.FindByEmailAsync(emailAddress);
+        var user = userManager.Users.FirstOrDefault(x => x.Email.Equals(emailAddress, StringComparison.Ordinal));
         string? validationToken = null;
 
         if (user == null)

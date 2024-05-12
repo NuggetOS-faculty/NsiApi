@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NSIProject.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5dbc74e82e8604be3dd46ec721e6f9e9352851c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dd77e1e7aad1c584faed43a4dc327c273b0a3fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("NSIProject.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NSIProject.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

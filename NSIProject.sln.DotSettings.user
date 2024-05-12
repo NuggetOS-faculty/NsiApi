@@ -1,9 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3160a525_002Dc3b8_002D4fdf_002Dbf1b_002D1770b744e228/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreatePostCommandTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::6C496AA4-CE16-49AB-8A60-039A9780AABF::net8.0::UnitTests.Commands.Posts.CreatePostCommandTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3160a525_002Dc3b8_002D4fdf_002Dbf1b_002D1770b744e228/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreatePostCommandTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;FunctionalityTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c043e231_002D4508_002D4538_002Daab7_002D070b9e30bc6f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreatePost_WhenCalled_ReturnsBadRequest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c043e231_002D4508_002D4538_002Daab7_002D070b9e30bc6f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreatePost_WhenCalled_ReturnsBadRequest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;FunctionalityTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -900,3 +900,11 @@ C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\obj\Debug\net8.0\refint\
 C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\obj\Debug\net8.0\FunctionalityTests.pdb
 C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\obj\Debug\net8.0\FunctionalityTests.genruntimeconfig.cache
 C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\obj\Debug\net8.0\ref\FunctionalityTests.dll
+C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Nikola\RiderProjects\NsiApi\FunctionalityTests\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
