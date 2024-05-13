@@ -16,4 +16,5 @@
       <ProjectReference Include="..\NSIProject.Infrastructure\NSIProject.Infrastructure.csproj" />
     </ItemGroup>
 
+
 </Project>
