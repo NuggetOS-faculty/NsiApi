@@ -1,4 +1,5 @@
 ﻿using NSIProject.Application.Common.Dto.Post;
+using NSIProject.Application.Common.Exceptions;
 using NSIProject.Application.Common.Interfaces;
 using NSIProject.Domain.Entities;
 
@@ -12,6 +13,15 @@ public class PostService : IPostService
     public PostService(INsiDbContext dbContext)
     {
         _dbContext = dbContext;
+    }
+
+    public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
+    {
+        var post = await _dbContext.Posts.FindAsync(id);
+        if (post == null) throw new NotFoundException("Post not found");
+
+        _dbContext.Posts.Remove(post);
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 
     public async Task<Guid> CreateAsync(CreatePostDto post, ApplicationUser user, CancellationToken cancellationToken)

@@ -1,0 +1,13 @@
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\bin\Release\net8.0\NSIProject.Domain.deps.json
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\bin\Release\net8.0\NSIProject.Domain.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\bin\Release\net8.0\NSIProject.Domain.pdb
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\NSIProject.Domain.csproj.AssemblyReference.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\NSIProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\NSIProject.Domain.AssemblyInfoInputs.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\NSIProject.Domain.AssemblyInfo.cs
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\NSIProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\NSIProject.Domain.sourcelink.json
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\NSIProject.Domain.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\refint\NSIProject.Domain.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\NSIProject.Domain.pdb
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Domain\obj\Release\net8.0\ref\NSIProject.Domain.dll

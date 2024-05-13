@@ -21,4 +21,6 @@
       <ProjectReference Include="..\NSIProject.Domain\NSIProject.Domain.csproj" />
     </ItemGroup>
 
+
+
 </Project>

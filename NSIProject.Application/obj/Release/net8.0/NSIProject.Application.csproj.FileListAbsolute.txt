@@ -1,0 +1,16 @@
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\bin\Release\net8.0\NSIProject.Application.deps.json
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\bin\Release\net8.0\NSIProject.Application.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\bin\Release\net8.0\NSIProject.Application.pdb
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\bin\Release\net8.0\NSIProject.Domain.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\bin\Release\net8.0\NSIProject.Domain.pdb
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProject.Application.csproj.AssemblyReference.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProject.Application.AssemblyInfoInputs.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProject.Application.AssemblyInfo.cs
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProject.Application.sourcelink.json
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProje.43BC15D1.Up2Date
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProject.Application.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\refint\NSIProject.Application.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\NSIProject.Application.pdb
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject.Application\obj\Release\net8.0\ref\NSIProject.Application.dll

@@ -12,9 +12,9 @@ public class UserService : IUserService
         _context = context;
     }
 
-    public async Task<ApplicationUser?> FindById(Guid guid)
+    public async Task<ApplicationUser?> FindById(string id)
     {
-        var user = await _context.Users.FindAsync(guid);
+        var user = await _context.Users.FindAsync(id);
         return user;
     }
 
