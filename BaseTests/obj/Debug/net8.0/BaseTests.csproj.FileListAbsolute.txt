@@ -30,3 +30,5 @@ C:\Users\Nikola\RiderProjects\NsiApi\BaseTests\obj\Debug\net8.0\BaseTests.dll
 C:\Users\Nikola\RiderProjects\NsiApi\BaseTests\obj\Debug\net8.0\refint\BaseTests.dll
 C:\Users\Nikola\RiderProjects\NsiApi\BaseTests\obj\Debug\net8.0\BaseTests.pdb
 C:\Users\Nikola\RiderProjects\NsiApi\BaseTests\obj\Debug\net8.0\ref\BaseTests.dll
+C:\Users\Nikola\RiderProjects\NsiApi\BaseTests\bin\Debug\net8.0\NSIProject.Application.dll
+C:\Users\Nikola\RiderProjects\NsiApi\BaseTests\bin\Debug\net8.0\NSIProject.Application.pdb

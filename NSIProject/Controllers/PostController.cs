@@ -16,10 +16,17 @@ public class PostController : BaseController
     }
 
     [HttpPost]
-    [Authorize(AuthenticationSchemes = nameof(AuthConstants.HeaderDbAuthSchema))]
+    [Authorize]
     public async Task<IActionResult> CreatePost([FromBody] CreatePostDto postDto)
     {
-        Console.WriteLine("Creating post...");
         return Ok(await Mediator.Send(new CreatePostCommand(postDto)));
+    }
+
+    [HttpDelete]
+    [Authorize]
+    public async Task<IActionResult> DeletePost([FromQuery] Guid id)
+    {
+        await Mediator.Send(new DeletePostCommand(id));
+        return Ok();
     }
 }

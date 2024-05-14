@@ -8,7 +8,6 @@ public static partial class PostMapper
 {
     public static PostDetailsDto MapToPostDetailsDto(this Domain.Entities.Post post)
     {
-        return new PostDetailsDto(post.Title, post.Content, post.User.FirstName!,
-            post.User.LastName!, post.Id);
+        return new PostDetailsDto(post.Title, post.Content, post.Id);
     }
 }

@@ -35,4 +35,13 @@ public class PostService : IPostService
     {
         return await _dbContext.Posts.FindAsync(id);
     }
+
+    public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
+    {
+        var post = await _dbContext.Posts.FindAsync(id);
+        if (post == null) return;
+
+        _dbContext.Posts.Remove(post);
+        await _dbContext.SaveChangesAsync(cancellationToken);
+    }
 }
