@@ -57,6 +57,20 @@ C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\MediatR.dll
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject\bin\Debug\net8.0\Riok.Mapperly.Abstractions.dll
 C:\Users\onlin\RiderProjects\NSIProject\NSIProject\obj\Debug\net8.0\NSIProject.Api.sourcelink.json
+<<<<<<< .merge_file_a29152
+=======
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.csproj.AssemblyReference.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.AssemblyInfoInputs.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.AssemblyInfo.cs
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.sourcelink.json
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\refint\NSIProject.Api.dll
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.pdb
+>>>>>>> .merge_file_a19732
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\appsettings.json
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\NSIProject.Api.exe
@@ -94,6 +108,7 @@ C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\NSIProject.Infr
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\NSIProject.Infrastructure.pdb
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\NSIProject.Application.pdb
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\NSIProject.Domain.pdb
+<<<<<<< .merge_file_a29152
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.csproj.AssemblyReference.cache
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.AssemblyInfoInputs.cache
@@ -102,6 +117,8 @@ C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.sourcelink.json
+=======
+>>>>>>> .merge_file_a19732
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\staticwebassets\msbuild.NSIProject.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -111,6 +128,7 @@ C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\staticwebassets
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\scopedcss\bundle\NSIProject.Api.styles.css
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProje.C03AE71F.Up2Date
+<<<<<<< .merge_file_a29152
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.dll
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\refint\NSIProject.Api.dll
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.pdb
@@ -191,3 +209,7 @@ C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\Microsoft.Ident
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+=======
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\NSIProject.Api.genruntimeconfig.cache
+C:\Users\Nikola\RiderProjects\NsiApi\NSIProject\obj\Debug\net8.0\ref\NSIProject.Api.dll
+>>>>>>> .merge_file_a19732

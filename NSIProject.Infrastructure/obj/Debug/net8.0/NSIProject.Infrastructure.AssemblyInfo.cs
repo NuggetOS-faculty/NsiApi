@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NSIProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< .merge_file_a31032
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63686fd22c8f0430539b680558bc26d4a44ec1b8")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a5ec751083bfe86087381ded9ce97437ce333bb")]
+>>>>>>> .merge_file_a27372
 [assembly: System.Reflection.AssemblyProductAttribute("NSIProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NSIProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
