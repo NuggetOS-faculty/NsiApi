@@ -36,6 +36,7 @@ public static class DependencyInjection
         services.AddScoped<IPostService, PostService>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<ICurrentUserService, CurrentUserService>();
 
         services.Configure<JwtConfiguration>(configuration.GetSection("JwtConfiguration"));
         return services;

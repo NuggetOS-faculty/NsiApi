@@ -18,7 +18,8 @@ public class AuthService(ApplicationUserManager userManager, IOptions<JwtConfigu
 
     public async Task<BeginLoginResponseDto> BeginLoginAsync(string emailAddress)
     {
-        var user = await userManager.FindByEmailAsync(emailAddress);
+        var normalizedEmail = emailAddress.ToLower();
+        var user = userManager.Users.FirstOrDefault(u => u.Email.ToLower() == normalizedEmail);
         string? validationToken = null;
 
         if (user == null)
@@ -37,7 +38,8 @@ public class AuthService(ApplicationUserManager userManager, IOptions<JwtConfigu
     public async Task<CompleteLoginResponseDto> CompleteLoginAsync(string validationToken)
     {
         var (userToken, emailAddress) = ExtractValidationToken(validationToken);
-        var user = await userManager.FindByEmailAsync(emailAddress);
+        var normalizedEmail = emailAddress.ToLower();
+        var user = userManager.Users.FirstOrDefault(u => u.Email.ToLower() == normalizedEmail);
 
         if (user is not null)
         {
@@ -62,6 +64,8 @@ public class AuthService(ApplicationUserManager userManager, IOptions<JwtConfigu
                 authClaims.Add(new Claim(ClaimTypes.Role,
                     roleFromDb));
             }
+
+            authClaims.Add(new Claim(ClaimTypes.Email, user.Email));
             //
             // authClaims.AddRange(user.Claims.Select(item => new Claim(item.Type,
             //     item.Value)));
