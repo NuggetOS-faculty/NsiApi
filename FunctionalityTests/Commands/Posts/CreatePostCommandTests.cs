@@ -36,7 +36,7 @@ public class CreatePostCommandTests : BaseTest, IDisposable
         var content = new StringContent(JsonConvert.SerializeObject(postDto), Encoding.UTF8, "application/json");
 
         // Act
-        var response = await Client.PostAsync("/api/Post/Creas", content, CancellationToken.None);
+        var response = await Client.PostAsync("/api/Post/CreatePost", content, CancellationToken.None);
 
         // Assert
         Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
